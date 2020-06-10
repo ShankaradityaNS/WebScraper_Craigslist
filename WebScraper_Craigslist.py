@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 #URL to be scraped#
-url = "https://bangalore.craigslist.org/search/jjj?is_internship=1&is_nonprofit=1&is_telecommuting=1"
+url = "https:##############################################"
 #Total number of jobs#
 job_no = 0
 
@@ -62,7 +62,7 @@ while True:
 
  url_tag = soup.find('a',{"title":"next page"})             #Goes to next page#
  if url_tag.get('href'):
-     url = "https://bangalore.craigslist.org/search/jjj?is_internship=1&is_nonprofit=1&is_telecommuting=1"+url_tag.get('href')
+     url = "https:#######################################################"+url_tag.get('href')
      print(url)
  else:
      break
